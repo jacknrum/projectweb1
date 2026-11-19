@@ -1,0 +1,66 @@
+* {box-sizing:border-box; margin:0; padding:0;}
+body {background:#1a1310; color:#f6ead7; font-family:Arial, Helvetica, sans-serif; line-height:1.6;}
+header {padding:80px 6vw; text-align:center; border-bottom:4px solid orangered;}
+header p {max-width:640px; margin:20px auto; color:#b9a99a;}
+header p:first-child {color:orangered; font-weight:bold; letter-spacing:3px; text-transform:uppercase;}
+
+h1 {font-size:400%; line-height:1.1; text-transform:uppercase;}
+h1 span {color:orangered;}
+h2 {font-size:200%; margin-bottom:15px; text-transform:uppercase;}
+h3 {font-size:120%; margin-bottom:8px; color:orangered; text-transform:uppercase;}
+
+section {padding:60px 6vw;}
+section > p {max-width:720px; color:#b9a99a;}
+blockquote {max-width:720px; margin-top:25px; padding:15px 20px; border-left:5px solid orangered; background:#1a1310; color:#f6ead7; font-size:120%; font-style:italic;}
+cite {display:block; margin-top:5px; font-size:75%; font-style:normal; color:#b9a99a;}
+ul {list-style:none;}
+li {padding:12px 0; border-bottom:1px dashed #2c211d; color:#b9a99a;}
+li strong {color:#f6ead7;}
+footer {padding:30px 6vw; background:black; text-align:center; font-size:85%; color:#b9a99a;}
+
+.ticker {padding:10px 0; overflow:hidden; white-space:nowrap; background:orangered; color:#1a1310; font-weight:bold; text-transform:uppercase;}
+.ticker span {display:inline-block;}
+
+.cards {display:grid; grid-template-columns:repeat(auto-fit, minmax(240px, 1fr)); gap:20px; margin-top:30px;}
+.card {padding:20px; background:#2c211d; border-top:4px solid orangered;}
+.card p {color:#b9a99a;}
+
+.light {background:#f6ead7e9; color:#1a1310;}
+.light > p, .light .card p {color:#2c211d;}
+.light .card {background:white;}
+
+.stats {display:grid; grid-template-columns:repeat(auto-fit, minmax(160px, 1fr)); gap:20px; padding:40px 6vw; background:black; text-align:center; color:#b9a99a; text-transform:uppercase; font-size:85%;}
+.stats b {display:block; font-size:300%; color:orangered;}
+.split {display:grid; grid-template-columns:1fr 1fr; gap:40px; align-items:center;}
+.poster {padding:40px; background:orangered; color:#1a1310; text-align:center;}
+.poster h3 {font-size:250%; color:#1a1310;}
+
+.report-box {max-width:600px; margin:auto; padding:25px; background:#f6ead7; color:#1a1310; border:3px solid black;}
+#report {background:#2c211d;}
+#fields {display:grid; gap:14px;}
+#err {display:none; color:#b3261e;}
+#confirm {display:none; text-align:center;}
+#confirm p {margin-bottom:15px;}
+
+label {font-weight:bold; font-size:90%;}
+input, select, textarea {width:100%; margin-top:4px; padding:8px; font-family:inherit; font-size:100%; border:2px solid #1a1310;}
+textarea {min-height:90px;}
+
+/* field focus */
+input:focus, select:focus, textarea:focus {outline:none; border-color:orangered;}
+
+/* before form fill */
+#fields:has(:invalid) #err {display:block;}
+#fields:has(:invalid) label[role=button] {opacity:0.5; pointer-events:none;}
+
+/* after button is clicked */
+#sent:checked ~ #fields {display:none;}
+#sent:checked ~ #confirm {display:block;}
+
+header a, label[role=button] {display:inline-block; padding:12px 28px; font-size:110%; font-weight:bold; text-transform:uppercase; text-decoration:none; border:none; cursor:pointer;}
+label[role=button] {justify-self:start; text-align:center;}
+
+header a, label[role=button] {background:orangered; color:#1a1310;}
+header a:hover, label[role=button]:hover {background:#f6ead7;}
+
+@media (max-width:760px) {.split {grid-template-columns:1fr;} h1 {font-size:250%;}}

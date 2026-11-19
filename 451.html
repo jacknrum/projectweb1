@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Firemen - Protecting Your Happiness</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <p>Firehouse 451</p>
+  <h1>We Burn So You Can <span>Be Happy.</span></h1>
+  <p>The Firemen stand between you and the most dangerous thing ever printed: an idea you didn't ask for. Every alarm answered. Every page reduced to warm, harmless ash.</p>
+  <a href="#report">Report a Hoard</a>
+</header>
+
+<div class="ticker"><span>Clean minds, quiet homes &nbsp;-&nbsp; Nobody is better than anybody &nbsp;-&nbsp; Books are kindling, not company &nbsp;-&nbsp; Trust the Salamander &nbsp;-&nbsp; A full parlor is a full life &nbsp;-&nbsp;</span></div>
+
+<section>
+  <h2>Our Duty: From Alarm to Ash</h2>
+  <p>Long ago, firemen had to put fires <em>out</em>. Today every house is fireproof, so we've taken on a nobler job: keeping the public safe from confusion, contradiction, and the gloom that pages bring.</p>
+  <div class="cards">
+    <div class="card">
+      <h3>1. The Alarm</h3>
+      <p>A concerned neighbor files a report. The firehouse bell rings, and the brass pole gets its exercise. Response time: faster than doubt.</p>
+    </div>
+    <div class="card">
+      <h3>2. The Response</h3>
+      <p>The Salamander roars through the streets, siren singing, while our trusty hound sniffs out every nook and cranny.</p>
+    </div>
+    <div class="card">
+      <h3>3. The Burn</h3>
+      <p>Kerosene, a flick of the igniter, and the pages curl up like black butterflies. Fast, clean, and beautiful to watch.</p>
+    </div>
+    <div class="card">
+      <h3>4. The Calm</h3>
+      <p>Neighbors return to their parlor walls and radios. The worry is gone, the smoke clears, and the block goes back to being pleasant.</p>
+    </div>
+  </div>
+</section>
+
+<section class="light">
+  <h2>How the Firemen Keep You Safe</h2>
+  <p>Books disagree with each other. They disagree with <em>you</em>. They make some people feel clever and others feel left out. We think that's simply not fair, so we fix it.</p>
+  <blockquote>“A book is a loaded gun in the house next door.”<cite>— Captain Beatty, Firehouse 451</cite></blockquote>
+  <div class="cards">
+    <div class="card">
+      <h3>Everyone Is Equal</h3>
+      <p>As Captain Beatty puts it, “We must all be alike.” When nobody has read more than anybody else, nobody can lord it over their neighbor.</p>
+    </div>
+    <div class="card">
+      <h3>No More Sad Endings</h3>
+      <p>Stories full of grief, war, and loss only make people unhappy. We remove the source so your evenings stay bright.</p>
+    </div>
+    <div class="card">
+      <h3>No Confusing Arguments</h3>
+      <p>One book says this, another says that. With the shelves cleared, there's nothing left to argue about.</p>
+    </div>
+    <div class="card">
+      <h3>More Time for Fun</h3>
+      <p>Hours once wasted squinting at tiny print are now free for racing, the parlor family, and the ballgame.</p>
+    </div>
+    <div class="card">
+      <h3>Community Spirit</h3>
+      <p>Every report is an act of neighborly love. Together we keep the whole street content.</p>
+    </div>
+  </div>
+</section>
+
+<div class="stats">
+  <div><b>+1,000,000</b>Volumes Retired</div>
+  <div><b>38</b>Sec. Avg Response</div>
+  <div><b>451</b>Degrees, Every Time</div>
+  <div><b>100</b>% Public Happiness*</div>
+</div>
+
+<section>
+  <h2>Know the Signs of a Book Hoarder</h2>
+  <div class="split">
+    <ul>
+      <li><strong>Asks "why" instead of "how."</strong> Good citizens want to know how things work, not why.</li>
+      <li><strong>Walks at night, on purpose.</strong> Especially without a destination or a car.</li>
+      <li><strong>Leaves the parlor walls switched off.</strong> A dark wall is a busy mind.</li>
+      <li><strong>Talks about the past fondly.</strong> Or mentions things "they read somewhere."</li>
+      <li><strong>Smells faintly of old paper.</strong> Our hound notices. So should you.</li>
+      <li><strong>Seems quietly thoughtful.</strong> Happy people don't need to stare at rain.</li>
+    </ul>
+    <div class="poster">
+      <h3>See Something? Spark Something.</h3>
+      <p>Every report is confidential. Every neighbor stays happy.</p>
+    </div>
+  </div>
+</section>
+
+<!-- report box -->
+<section id="report">
+  <div class="report-box">
+    <h3>Form 451-R</h3>
+    <input type="checkbox" id="sent" hidden>
+    <div id="fields">
+      <label>Address of Suspected Hoard
+        <input type="text" placeholder="e.g. 12 Elm Lane" required>
+      </label>
+      <label>Estimated Quantity
+        <select>
+          <option>A single volume</option>
+          <option>A few (2–10)</option>
+          <option>A shelf (11–50)</option>
+          <option>A library (50+)</option>
+          <option>Unknown</option>
+        </select>
+      </label>
+      <label>What Did You Observe?
+        <textarea placeholder="Describe what you saw, smelled, or overheard…" required></textarea>
+      </label>
+      <!-- does NOT send report anywhere -->
+      <label for="sent" role="button">Sound the Alarm</label>
+    </div>
+    <div id="confirm">
+      <h3>Case #451-0451 Filed</h3>
+      <p>Thank you, citizen. The station has been notified. Please return to your parlor and enjoy your evening.</p>
+      <label for="sent" role="button">File Another</label>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <p>Firehouse 451 · Keeping the Peace, One Page at a Time</p>
+  <p>*Happiness figures are self-reported by citizens who are very happy.</p>
+</footer>
+
+<script src="rotate.js"></script>
+</body>
+</html>
